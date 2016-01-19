@@ -14,12 +14,14 @@ describe('leapYear', function () {
   it("is true for years divisible by 400", function() {
     expect(leapYear(2000)).to.equal(true);
   });
+});
 
+describe('validateEntry', function () {
   it("is false for non-positive years", function() {
-    expect(leapYear(-32)).to.equal(false);
+    expect(validateEntry(-32)).to.equal(false);
   });
 
-  it("throws error for non-numeric entry", function() {
-    expect(leapYear("Nineteen-Ninety-Six")).to.equal(false);
+  it("is false for non-numeric entry", function() {
+    expect(validateEntry("Nineteen-Ninety-Six")).to.equal(false);
   });
 });

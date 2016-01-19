@@ -19,9 +19,7 @@ $(document).ready(function() {
     var year = parseInt($("input#year").val());
     var result = leapYear(year);
 
-    validateEntry();
-
-    if(validateEntry) {
+    if (validateEntry(year)) {
       if (!result) {
         $(".not").text("not");
       } else {
@@ -29,8 +27,10 @@ $(document).ready(function() {
       }
       $(".year").text(year);
 
+      $("#error").hide();
       $("#result").show();
     } else {
+      $("#result").hide();
       $("#error").show();
       return false;
     }
