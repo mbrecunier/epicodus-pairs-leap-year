@@ -1,6 +1,6 @@
 # Leap Year Test
 
-##### Find out if a year is a leap year
+##### Find out if a year is a leap year, 1/19/2016
 
 #### By Michelle Brecunier and Anna Lawley
 
